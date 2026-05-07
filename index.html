@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C-PIZZA Cameroon</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <img src="logo1.jpeg" alt="C-PIZZA Storefront" class="logo-img">
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Space</a></li>
+                <li><a href="#contact">Reservations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="back-video">
+            <source src="PXL_20260505_161225008.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1>C-PIZZA</h1>
+            <p>Authentic Wood-Fired Pizza and Local Delicacies in Odza</p>
+            <br>
+            <a href="#menu" class="btn">View Menu Specials</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <p style="margin-bottom: 20px;">Click any image to see full size</p>
+        <div class="grid">
+            <div class="card">
+                <img src="IMG-20260505-WA0060.jpg" alt="Chicken & Mac" class="zoom-img">
+                <div class="card-info">
+                    <h3>Chicken & Mac</h3>
+                    <span class="price">4,500 XAF</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMG-20260505-WA0093.jpg" alt="Steak Tacos" class="zoom-img">
+                <div class="card-info">
+                    <h3>Steak Tacos</h3>
+                    <span class="price">5,000 FCFA</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMG-20260505-WA0062.jpg" alt="Surf & Turf" class="zoom-img">
+                <div class="card-info">
+                    <h3>Surf & Turf</h3>
+                    <span class="price">12,000 FCFA</span>
+                </div>
+            </div>
+            <div class="card">
+            <video autoplay muted loop playsinline class="zoom-img">
+                <source src="VID-20260505-WA0094.mp4" type="video/mp4">
+            </video>
+                 <div class="card-info">
+                    <h3>Chef's Action Special</h3>
+                    <span class="price">7,000 FCFA each</span>
+                 </div>
+            </div>
+            <div class="card">
+                <img src="IMG-20260505-WA0072.jpg" alt="Dodo Special" class="zoom-img">
+                <div class="card-info">
+                    <h3>Dodo & Gizzard</h3>
+                    <span class="price">3,500 FCFA</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMG-20260505-WA0089.jpg" alt="Meat Platter" class="zoom-img">
+                <div class="card-info">
+                    <h3>Mixed Grill</h3>
+                    <span class="price">8,000 FCFA</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Pizza.webp" alt="Signature Pizza" class="zoom-img">
+                <div class="card-info">
+                    <h3>Signature Pizza</h3>
+                    <span class="price">6,500 FCFA</span>
+                </div>
+            </div>
+            <div class="card">
+            <video autoplay muted loop playsinline class="zoom-img">
+                <source src="VID-20260505-WA0097.mp4" type="video/mp4">
+            </video>
+                 <div class="card-info">
+                    <h3>Chef's Action Special</h3>
+                    <span class="price">9,000 FCFA</span>
+                 </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">The Atmosphere</h2>
+        <div class="grid">
+            <img src="PXL_20260505_161404109.jpg" class="gallery-img zoom-img" alt="Interior">
+            <img src="PXL_20260505_161329923.jpg" class="gallery-img zoom-img" alt="Interior">
+            <img src="PXL_20260505_161549381.jpg" class="gallery-img zoom-img" alt="Upstairs View">
+            <img src="PXL_20260505_161529892.jpg" class="gallery-img zoom-img" alt="Upstairs View">
+            <div class="grid" style="margin-top: 20px;">
+    <video autoplay muted loop playsinline class="gallery-img zoom-img">
+        <source src="PXL_20260505_161556944.mp4" type="video/mp4">
+    </video>
+</div>
+            <div class="grid" style="margin-top: 20px;">
+    <video autoplay muted loop playsinline class="gallery-img zoom-img">
+        <source src="PXL_20260505_161256177.mp4" type="video/mp4" alt="Interior">
+    </video>
+</div>
+            <div class="gird" style="margin-top: 20px;">
+    <video autoplay muted loop playsinline class="gallery-img zoom-img">
+        <source src="PXL_20260505_161422947.mp4" type="video/mp4" alt="Interior">
+    </video>
+</div>
+            <div class="grid" style="margin-top: 20px;">
+    <video autoplay muted loop playsinline class="gallery-img zoom-img">
+        <source src="PXL_20260505_161225008.mp4" type="video/mp4" alt="Interior">
+    </video>
+</div>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Book a Table</h2>
+        <form id="res-form" class="book">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="date" id="date" required>
+            <input type="text" id="email" placeholder="Email" required>
+            <button type="submit" class="btn">Confirm Reservation</button>
+        </form>
+        <p id="msg"></p>
+    </section>
+
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fullImg">
+    <video class="modal-content" id="fullVideo" controls style="display:none;"></video>
+    <div id="caption"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
